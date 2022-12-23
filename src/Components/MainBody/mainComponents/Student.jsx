@@ -5,7 +5,8 @@
  import MailOutlineIcon from '@mui/icons-material/MailOutline';
  import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
  import {indigo} from "@mui/material/colors"
- const color=indigo[50];
+ const color1=indigo[300];
+ const color2=indigo[500];
  const rows = [
   { id: 1, col1: 'Samantha william', col2: '#123456789' ,col3:'March 25,2021' ,col4:"Amanda William" ,col5:"jakarta",col7:"VIIA"},
   { id: 2, col1: 'Tony Soap', col2: '#123456789' ,col3:'March 25,2021' ,col4:"Geaorge Soap" ,col5:"jakarta",col7:"VIIB"},
@@ -19,12 +20,12 @@
 
 const columns = [
   
-  { field: 'col1', headerName: 'Name', width: 150,renderCell:(params)=>{
+  { field: 'col1',editable:true, headerName: 'Name', width: 150 ,renderCell:(params)=>{
     return(<Box display="flex">
       <Avatar src={{width:10,height:10}}/>
     <Typography padding={1} fontWeight="bold" fontSize="12px" >{params.row.col1}</Typography></Box>)
     }},
-  { field: 'col2', headerName: 'id', width: 120 ,renderCell:(params)=>{
+  { field: 'col2',editable:true, headerName: 'id', width: 120 ,renderCell:(params)=>{
     return(
       
     <Typography padding={1} fontWeight="bold" fontSize="12px" >{params.row.col2}</Typography>)
@@ -42,14 +43,14 @@ const columns = [
   { field: 'col5', headerName: 'city', width: 90 },
   { field: 'download', headerName: 'Contact', width: 100,renderCell:(params)=>{
     return( <Stack direction="row" spacing={2}>
-      <Link href="#" sx={{padding:"5px",backgroundColor:{color},borderRadius:"25px"}}><CallIcon sx={{fontSize:"15px"}}/></Link>
-      <Link href="#" sx={{padding:"5px",backgroundColor:{color},borderRadius:"25px"}}><MailOutlineIcon sx={{fontSize:"15px"}}/></Link>
+      <Link href="#" sx={{padding:"5px",backgroundColor:{color1} ,color:{color2},borderRadius:"25px"}}><CallIcon sx={{fontSize:"15px"}}/></Link>
+      <Link href="#" sx={{padding:"5px",backgroundColor:{color1} ,color:{color2},borderRadius:"25px"}}><MailOutlineIcon sx={{fontSize:"15px"}}/></Link>
     </Stack>)
     } },
   { field: 'col7', headerName: 'Grade', width: 60,headerAlign:'center', renderCell:(params)=>{
     return(
       
-    <Typography padding={1} bgcolor="orangered" color="warning" borderRadius="20px" fontWeight="bold" fontSize="12px" >{params.row.col7}</Typography>)
+    <Typography padding={1} color="warning" borderRadius="20px" fontWeight="bold" fontSize="12px" >{params.row.col7}</Typography>)
     }},
   { field: 'col8', headerName: 'Action',headerAlign:'center', width: 60,renderCell:()=><Stack direction="row" spacing={2}><MoreHorizIcon/></Stack>  },
  
@@ -79,14 +80,16 @@ const Student = () => {
    
         <DataGrid
          columnGroupingModel={columnGroupingModel}
-  experimentalFeatures={{ columnGrouping: true }}
+  experimentalFeatures={{ columnGrouping: true,newEditingApi:true }}
   rows={rows}
   columns={columns}
-  checkboxSelection
-  disableSelectionOnClick
   rowsPerPageOptions={[5,10,20]}
   pageSize={5}
   onPageSizeChange={10}
+  checkboxSelection
+  disableSelectionOnClick
+ 
+ 
   
   sx={{
     boxShadow: 2,

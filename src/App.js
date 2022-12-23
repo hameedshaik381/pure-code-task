@@ -1,12 +1,13 @@
 import { Box } from '@mui/material'
 import {indigo} from "@mui/material/colors"
-import Sidebar from './Components/Sidebar'
-import Main from './Components/Main'
+import Sidebar from './Components/Sidebar/Sidebar'
+import Main from './Components/MainBody/Main'
+
 const color=indigo[50];
 
 function App() {
   return (
-  
+  <>
    
 <Box  display="flex">
  
@@ -18,7 +19,7 @@ function App() {
 </Box>
   </Box>
 
-
+</>
 
   );
 }

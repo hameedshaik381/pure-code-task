@@ -12,10 +12,10 @@ const Sidebar = () => {
                         <Box height="10vh">
                                 <Brand />
                         </Box>
-                        <Box height="60vh">
+                        <Box height="70vh">
                                 <Menu />
                         </Box>
-                        <Box height="30vh">
+                        <Box height="20vh">
                                 <Footer />
                         </Box>
                 </Box>

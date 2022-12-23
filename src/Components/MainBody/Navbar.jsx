@@ -22,17 +22,23 @@ const Navbar = () => {
     <Box  height="20vh">
       
         <Box height="50%"  >
-        <Box display="flex" justifyContent="space-between" p={3}  >
-<Typography variant="h5" sx={{color:"primary" ,fontWeight:"bold"}}>
+        <Box display="flex" justifyContent="space-between" p={4}  >
+<Typography variant="h5" sx={{color:"#3f50b5" ,fontWeight:"bold",marginX:"30px"}}>
   Students
 </Typography>
 <Stack direction="row" spacing={3}>
 <Badge badgeContent={4} color="success">
-<CircleNotificationsRoundedIcon/>
+<CircleNotificationsRoundedIcon fontSize="medium"/>
 </Badge>
 
-<SettingsRoundedIcon/>
+<SettingsRoundedIcon fontSize="medium" fontWeight="bold"/>
+<Box display="flex" >
+  <Stack marginX="10px" >
+    <Typography color="primary" fontSize="small">Hameed shaik</Typography>
+    <Typography color="grey"  fontSize="small" textAlign="right">Admin</Typography>
+  </Stack>
 <Avatar>H</Avatar>
+</Box>
 
 </Stack>
         </Box>
@@ -45,7 +51,7 @@ const Navbar = () => {
 
     <Paper
       component="form"
-      sx={{  display: 'flex', alignItems: 'center', width: 250 ,borderRadius:"25px"}}
+      sx={{  display: 'flex', marginX:"30px",alignItems: 'center', width: 240 ,borderRadius:"20px"}}
     >
       <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
         <SearchIcon />
