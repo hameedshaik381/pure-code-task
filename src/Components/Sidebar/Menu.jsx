@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import {Box} from "@mui/material"
-import {List,ListItem,ListItemText,ListItemIcon} from "@mui/material"
+import { Box } from "@mui/material"
+import { List, ListItem, ListItemText, ListItemIcon } from "@mui/material"
 
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import PersonIcon from '@mui/icons-material/Person';
@@ -12,85 +12,85 @@ import Person4Icon from '@mui/icons-material/Person4';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import WaterIcon from '@mui/icons-material/Water';
 
-import {indigo} from '@mui/material/colors'
+import { indigo } from '@mui/material/colors'
 const color = indigo[50];
 
 
 
 const Menu = () => {
- 
+
   return (
-    
-    
-    <Box sx={{paddingX:"50px",paddingY:"10px",display:"block"}}>
-<List disablePadding={true} sx={{color:"#A0A0A0"}}>
-<ListItem button={true} component={Link} sx={{'&:hover':{backgroundColor:{color}}}} to="/Dashboard">
-  <ListItemIcon sx={{color:"#A0A0A0"}}>
-    <HomeOutlinedIcon/>
-    </ListItemIcon>
-    
-  <ListItemText sx={{fontSize:"10px"}} disableTopography={true} primary="Dashboard" />
-</ListItem>
-<ListItem button={true} component={Link} sx={{'&:hover':{backgroundColor:{color}}}} to="/">
-<ListItemIcon sx={{color:"#A0A0A0"}}>
-    <PersonIcon/>
-    </ListItemIcon>
-  <ListItemText sx={{fontSize:"10px"}} disableTopography={true} primary="Students"/>
-</ListItem>
-<ListItem button={true} component={Link} sx={{'&:hover':{backgroundColor:{color}}}} to="/Teachers">
-<ListItemIcon sx={{color:"#A0A0A0"}}>
-    <Person4Icon/>
-    </ListItemIcon>
-  <ListItemText sx={{fontSize:"10px"}} disableTopography={true} primary="Teachers"/>
-</ListItem>
-<ListItem button={true} component={Link} sx={{'&:hover':{backgroundColor:{color}}}} to="/Events">
-<ListItemIcon sx={{color:"#A0A0A0"}}>
-    <EventNoteIcon/>
-    </ListItemIcon>
-  <ListItemText sx={{fontSize:"10px"}} disableTopography={true} primary="Events"/>
-</ListItem>
-<ListItem button={true} component={Link} sx={{'&:hover':{backgroundColor:{color}}}} to="/Finance">
-<ListItemIcon sx={{color:"#A0A0A0"}}>
-    <CleanHandsIcon/>
-    </ListItemIcon>
-  <ListItemText sx={{fontSize:"10px"}} disableTopography={true} primary="Finance" />
-</ListItem>
-<ListItem button={true} component={Link} sx={{'&:hover':{backgroundColor:{color}}}} to="/Food">
-<ListItemIcon sx={{color:"#A0A0A0"}}>
-    <RestaurantIcon/>
-    </ListItemIcon>
-  <ListItemText sx={{fontSize:"10px"}} disableTopography={true} primary="Food"/>
-</ListItem>
-<ListItem button={true} component={Link} sx={{'&:hover':{backgroundColor:{color}}}} to="/User">
-<ListItemIcon sx={{color:"#A0A0A0"}}>
-<PersonOutlineIcon/>
-    </ListItemIcon>
-  <ListItemText sx={{fontSize:"10px"}} disableTopography={true} primary="User"/>
-</ListItem>
-<ListItem button={true} component={Link} sx={{'&:hover':{backgroundColor:{color}}}} to="/Chat">
-<ListItemIcon sx={{color:"#A0A0A0"}}>
-<ChatBubbleOutlineIcon/>
-    </ListItemIcon>
-  <ListItemText sx={{fontSize:"10px"}} disableTopography={true} primary="Chat"/>
-</ListItem>
-<ListItem button={true} component={Link} sx={{'&:hover':{backgroundColor:{color}}}} to="/Latestactivity">
-<ListItemIcon sx={{color:"#A0A0A0"}}>
-<WaterIcon/>
-    </ListItemIcon>
-  <ListItemText sx={{fontSize:"10px"}} disableTopography={true} primary="Latestactivity"/>
-</ListItem>
 
 
-  </List>
+    <Box sx={{ paddingX: "50px", paddingY: "10px", display: "block" }}>
+      <List disablePadding={true} sx={{ color: "#A0A0A0" }}>
+        <ListItem button={true} component={Link} sx={{ '&:hover': { backgroundColor: { color } } }} to="/Dashboard">
+          <ListItemIcon sx={{ color: "#A0A0A0" }}>
+            <HomeOutlinedIcon />
+          </ListItemIcon>
+
+          <ListItemText sx={{ fontSize: "10px" }} disableTopography={true} primary="Dashboard" />
+        </ListItem>
+        <ListItem button={true} component={Link} sx={{ '&:hover': { backgroundColor: { color } } }} to="/">
+          <ListItemIcon sx={{ color: "#A0A0A0" }}>
+            <PersonIcon />
+          </ListItemIcon>
+          <ListItemText sx={{ fontSize: "10px" }} disableTopography={true} primary="Students" />
+        </ListItem>
+        <ListItem button={true} component={Link} sx={{ '&:hover': { backgroundColor: { color } } }} to="/Teachers">
+          <ListItemIcon sx={{ color: "#A0A0A0" }}>
+            <Person4Icon />
+          </ListItemIcon>
+          <ListItemText sx={{ fontSize: "10px" }} disableTopography={true} primary="Teachers" />
+        </ListItem>
+        <ListItem button={true} component={Link} sx={{ '&:hover': { backgroundColor: { color } } }} to="/Events">
+          <ListItemIcon sx={{ color: "#A0A0A0" }}>
+            <EventNoteIcon />
+          </ListItemIcon>
+          <ListItemText sx={{ fontSize: "10px" }} disableTopography={true} primary="Events" />
+        </ListItem>
+        <ListItem button={true} component={Link} sx={{ '&:hover': { backgroundColor: { color } } }} to="/Finance">
+          <ListItemIcon sx={{ color: "#A0A0A0" }}>
+            <CleanHandsIcon />
+          </ListItemIcon>
+          <ListItemText sx={{ fontSize: "10px" }} disableTopography={true} primary="Finance" />
+        </ListItem>
+        <ListItem button={true} component={Link} sx={{ '&:hover': { backgroundColor: { color } } }} to="/Food">
+          <ListItemIcon sx={{ color: "#A0A0A0" }}>
+            <RestaurantIcon />
+          </ListItemIcon>
+          <ListItemText sx={{ fontSize: "10px" }} disableTopography={true} primary="Food" />
+        </ListItem>
+        <ListItem button={true} component={Link} sx={{ '&:hover': { backgroundColor: { color } } }} to="/User">
+          <ListItemIcon sx={{ color: "#A0A0A0" }}>
+            <PersonOutlineIcon />
+          </ListItemIcon>
+          <ListItemText sx={{ fontSize: "10px" }} disableTopography={true} primary="User" />
+        </ListItem>
+        <ListItem button={true} component={Link} sx={{ '&:hover': { backgroundColor: { color } } }} to="/Chat">
+          <ListItemIcon sx={{ color: "#A0A0A0" }}>
+            <ChatBubbleOutlineIcon />
+          </ListItemIcon>
+          <ListItemText sx={{ fontSize: "10px" }} disableTopography={true} primary="Chat" />
+        </ListItem>
+        <ListItem button={true} component={Link} sx={{ '&:hover': { backgroundColor: { color } } }} to="/Latestactivity">
+          <ListItemIcon sx={{ color: "#A0A0A0" }}>
+            <WaterIcon />
+          </ListItemIcon>
+          <ListItemText sx={{ fontSize: "10px" }} disableTopography={true} primary="Latestactivity" />
+        </ListItem>
 
 
-      
+      </List>
 
-      </Box>
-   
-    
-    
-    
+
+
+
+    </Box>
+
+
+
+
   )
 }
 
