@@ -31,10 +31,10 @@ const Navbar = () => {
 <SettingsRoundedIcon fontSize="medium" fontWeight="bold"/>
 <Box display="flex" >
   <Stack marginX="10px" >
-    <Typography color="primary" fontSize="small">Hameed shaik</Typography>
+    <Typography color="#482880" fontSize="small">Hameed shaik</Typography>
     <Typography color="grey"  fontSize="small" textAlign="right">Admin</Typography>
   </Stack>
-<Avatar>H</Avatar>
+<Avatar >H</Avatar>
 </Box>
 
 </Stack>
