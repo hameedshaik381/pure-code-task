@@ -13,7 +13,7 @@ const Main = () => {
       <Box>
         <Navbar />
       </Box>
-      <Box >
+      <Box m={1}>
         <Routes>
           <Route path="/Dashboard" element={<Dashboard />} />
           <Route path="/" element={<Student />} exact />

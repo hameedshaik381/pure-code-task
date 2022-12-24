@@ -5,6 +5,7 @@
  import MailOutlineIcon from '@mui/icons-material/MailOutline';
  import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
  import {indigo} from "@mui/material/colors"
+ import "./Navlist.css"
  const color1=indigo[300];
  const color2=indigo[500];
  const rows = [
@@ -112,42 +113,42 @@ export const Student = () => {
 
 export const Chat = () => {
   return (
-    <center><h1>Chat</h1> </center>
+    <div className="container"><center><h1>Chat</h1> </center> </div>
   )
 }
 export const Teachers = () => {
   return (
-    <center><h1>Teachers</h1> </center>
+    <div className="container"><center><h1>Teachers</h1> </center> </div>
   )
 }
 
 export const Events = () => {
   return (
-    <center><h1>Events</h1> </center>
+    <div className="container"><center><h1>Events</h1> </center> </div>
   )
 }
 export const Finance = () => {
   return (
-    <center><h1>Finance</h1> </center>
+    <div className="container"><center><h1>Finance</h1> </center> </div>
   )
 }
 export const Latestactivity = () => {
   return (
-    <center><h1>Latestactivity</h1> </center>
+    <div className="container"><center><h1>Latestactivity</h1> </center> </div>
   )
 }
 export const Users = () => {
   return (
-    <center><h1>Users</h1> </center>
+    <div className="container"><center><h1>Users</h1> </center> </div>
   )
 }
 export const Dashboard = () => {
   return (
-    <center><h1>Dashboard</h1> </center>
+    <div className="container"><center><h1>Dashboard</h1> </center> </div>
   )
 }
 export const Food = () => {
   return (
-    <center><h1>Food</h1> </center>
+    <div className="container"><center><h1>Food</h1> </center> </div>
   )
 }

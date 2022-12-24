@@ -19,7 +19,7 @@ const Navbar = () => {
         <Box height="50%"  >
         <Box display="flex" justifyContent="space-between" p={4}  >
 <Typography variant="h5" sx={{
-    color:"#3f50b5" ,fontWeight:"bold",marginX:"30px"
+    color:"#482880" ,fontWeight:"bold",marginX:"30px"
    }}>
   Students
 </Typography>

@@ -1,6 +1,6 @@
 import React from 'react'
 import {Box} from '@mui/material'
-import Sidebar from './Components/Sidebar.jsx'
+import Sidebar from './Components/Sidebar/Sidebar.jsx'
 import Main from './Components/MainBody/Main.jsx'
 import {indigo} from '@mui/material/colors'
 const color = indigo[50];
