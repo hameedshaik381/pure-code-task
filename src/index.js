@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {ThemeProvider} from '@mui/material/styles'
-import {theme} from './Components/styles/Colors';
 import {BrowserRouter} from 'react-router-dom'
+import {ThemeProvider} from '@mui/material/styles'
+import {theme} from "./Components/styles/Colors.js"
+
 
 import App from './App';
 
@@ -10,11 +11,13 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
     <ThemeProvider theme={theme}>
+<BrowserRouter>
+ 
     <App />
-    </ThemeProvider>
     </BrowserRouter>
+    </ThemeProvider>
+  
   </React.StrictMode>
 );
 

@@ -74,7 +74,7 @@ const columnGroupingModel = [
 
 
 
-const Student = () => {
+export const Student = () => {
   return (
    <Box sx={{ height: 400, width:"70vw",padding:"50px" }}>
    
@@ -109,4 +109,45 @@ const Student = () => {
   )
 }
 
-export default Student
+
+export const Chat = () => {
+  return (
+    <center><h1>Chat</h1> </center>
+  )
+}
+export const Teachers = () => {
+  return (
+    <center><h1>Teachers</h1> </center>
+  )
+}
+
+export const Events = () => {
+  return (
+    <center><h1>Events</h1> </center>
+  )
+}
+export const Finance = () => {
+  return (
+    <center><h1>Finance</h1> </center>
+  )
+}
+export const Latestactivity = () => {
+  return (
+    <center><h1>Latestactivity</h1> </center>
+  )
+}
+export const Users = () => {
+  return (
+    <center><h1>Users</h1> </center>
+  )
+}
+export const Dashboard = () => {
+  return (
+    <center><h1>Dashboard</h1> </center>
+  )
+}
+export const Food = () => {
+  return (
+    <center><h1>Food</h1> </center>
+  )
+}

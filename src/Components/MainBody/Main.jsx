@@ -1,17 +1,9 @@
 
 import { Box } from '@mui/material'
 import Navbar from './Navbar'
-// import {Outlet} from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
-import Student from './mainComponents/Student'
-import Dashboard from "./mainComponents/Dashboard"
-import Finance from "./mainComponents/Finance"
-import Food from "./mainComponents/Food"
-import Users from "./mainComponents/Users"
-import Chat from "./mainComponents/Chat"
-import Latestactivity from './mainComponents/Latestactivity'
-import Events from "./mainComponents/Events"
-import Teachers from "./mainComponents/Teachers"
+import {Student,Dashboard,Finance,Food,Users,Chat,Latestactivity,Events,Teachers} from './Navigationlist.jsx'
+
 
 
 

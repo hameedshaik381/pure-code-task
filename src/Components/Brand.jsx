@@ -13,7 +13,7 @@ const Brand = () => {
         A
       </Box>
       <Typography sx={{
-      color:"white" ,fontWeight:"bold" ,padding:"15px",fontSize:"20px"
+      color:"white",fontWeight:"bold" ,padding:"15px",fontSize:"20px"
     }}>
         Akademi
       </Typography>

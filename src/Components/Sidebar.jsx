@@ -8,7 +8,7 @@ import Footer from './Footer'
 
 const Sidebar = () => {
         return (
-                <Box sx={{ backgroundColor: "primary" }}>
+                <Box sx={{ backgroundColor: "#482880" }}>
                         <Box height="10vh">
                                 <Brand />
                         </Box>
