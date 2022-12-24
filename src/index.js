@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {ThemeProvider} from '@mui/material'
-import {theme} from './themes/Sidebartheme';
+import {ThemeProvider} from '@mui/material/styles'
+import {theme} from './Components/styles/Colors';
 import {BrowserRouter} from 'react-router-dom'
 
 import App from './App';

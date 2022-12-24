@@ -1,6 +1,8 @@
 import React from 'react'
 import {Box,Typography} from "@mui/material"
+
 const Footer = () => {
+ 
   return (
     <Box p={3}>
 <Typography sx={{fontSize:"12px",color:"whitesmoke" ,fontWeight:"bold"}}>
